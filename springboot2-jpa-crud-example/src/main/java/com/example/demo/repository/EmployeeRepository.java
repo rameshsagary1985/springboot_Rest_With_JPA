@@ -6,5 +6,8 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.model.Employee;
 
 @Repository
+///before writting any repository it should be  prefex with model name
 public interface EmployeeRepository extends JpaRepository<Employee, Long>{
+	
+	
 }

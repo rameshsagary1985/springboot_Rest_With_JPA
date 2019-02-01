@@ -60,11 +60,6 @@ public class OneToOneBiDirectionalController {
 	 @GetMapping
 	 public ResponseEntity<Address> getAddress(@RequestParam Long addressid) throws ResourceNotFoundException
 	 {
-		 
-		 
-		
-		 
-		 
 		 Address address=	onetooneRepository.findById(addressid)
 				 .orElseThrow(() -> new ResourceNotFoundException("Address not found for this id :: " + addressid));
 				 
